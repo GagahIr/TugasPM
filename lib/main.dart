@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'SKEDUL.IN APP',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple), useMaterial3: true),
+      home: const MyHomePage(title: 'SKEDUL.IN APP'),
     );
   }
 }
@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: .center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('You have pushed the button this many times:'),
             Text(
@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
                 return ProfilePage();
               },));
-            }, child: Text('Halaman Profile')),
+            }, child: Text('Profile Page')),
           ],
         ),
       ),
